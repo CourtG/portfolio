@@ -2,8 +2,7 @@
 
 .wrapper {
     max-width: 1260px;
-    width: 100%;
-    background-color: $background;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -23,6 +22,16 @@ body {
     overflow-x: hidden;
     background: linear-gradient(to right, #fff0f0 0%, #fff0f0 60%, white 60%);
     background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    // list-style: none;
+    text-decoration: none !important;
+    color: inherit;
 }
 
 

@@ -243,11 +243,33 @@ p {
   margin: 0;
 }
 
+.home h1 {
+  position: absolute;
+  color: #f44647;
+  font-weight: 800;
+  font-size: 140px;
+  line-height: 143px;
+  letter-spacing: -4px;
+  z-index: 1;
+  left: 0;
+}
+
+.home span {
+  text-decoration: underline;
+}
+
+.section h2 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
 /******* BASE STYLES START *******/
 .wrapper {
   max-width: 1260px;
-  width: 100%;
-  background-color: #ffecec;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -270,7 +292,35 @@ body {
   background-position: center;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
 /******* BASE STYLES END *******/
+.home {
+  height: 100vh;
+  padding: 85px 0;
+  margin: 0;
+}
+
+.home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
 .navContainer {
   position: fixed;
   right: 0;
@@ -357,16 +407,53 @@ body {
   background-color: #000000;
 }
 
-.navContainer .site-title:hover:before {
+.navContainer h1:hover:before {
   width: 0;
   background-color: #f44647;
 }
 
+.skillsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+}
+
+.iconItem img {
+  height: 70%;
+  width: auto;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.skillsWrap .iconItem {
+  width: calc(12% - 65px);
+  margin-bottom: 80px;
+}
+
+.skillsWrap .iconItem h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 30px;
+  -webkit-transition: 0.35s ease-out;
+  transition: 0.35s ease-out;
+}
+
+.skillsWrap .iconItem:hover h4 {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
-@media (min-width: 2800px) {
-  h1 {
-    font-size: 4vw;
-    line-height: 4vw;
+@media (min-width: 1200px) {
+  .nav-btn {
+    display: none;
   }
 }
 /****************** MEDIA QUERY FOR TABLET START ******************/

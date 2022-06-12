@@ -1,8 +1,8 @@
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
-@media (min-width: 2800px) {
-    h1 {
-        font-size: 4vw;
-        line-height: 4vw;
+@media (min-width: 1200px) {
+
+    .nav-btn {
+        display: none;
     }
 }
 

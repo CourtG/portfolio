@@ -1,0 +1,31 @@
+.skillsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.iconItem img {
+    height: 70%;
+    width: auto;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.skillsWrap .iconItem {
+    width: calc(12% - 65px);
+    margin-bottom: 80px;
+}
+
+
+.skillsWrap .iconItem h4 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 30px;
+    transition: .35s ease-out;
+}
+
+.skillsWrap .iconItem:hover h4 {
+    transform: translateX(-10px);
+}
