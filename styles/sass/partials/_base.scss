@@ -1,0 +1,29 @@
+/******* BASE STYLES START *******/
+
+.wrapper {
+    max-width: 1260px;
+    width: 100%;
+    background-color: $background;
+    margin: 0 auto;
+}
+
+.section {
+    margin-top: 65px;
+    padding-top: 85px;
+}
+
+body {
+    color: #000000;
+    line-height: 2;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #fff0f0 0%, #fff0f0 60%, white 60%);
+    background-position: center;
+}
+
+
+/******* BASE STYLES END *******/

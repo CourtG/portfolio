@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href='https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<link rel="stylesheet" href="./styles/style.css"
     
-// link:
-//googlefonts, fontawesome icons (or download), stylesheet
+<!-- link:fontawesome icons (or download) -->
 
 
 <title>Courtfolio!</title>
@@ -18,111 +21,193 @@
 <body>
 
     <header>
-        <nav>
-            <h1>Courtney Gibson</h1>
-            <ul>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Portfolio</li>
-                <li>Get In Touch</li>
-            </ul>
-            <ul>
-                <li>GH</li>
-                <li>IN</li>
-                <li>IG</li>
-            </ul>
-        </nav>
-        <h1>Hello I'm Courtney Gibson</h1>
-        <img src="" alt="Portrait of Courtney">
+        <div class="wrapper">
+            
+            <div clas="navContainer">
+                <a class="site-title slow-scroll" href="#home">COURTNEY GIBSON</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                </nav>
+            </div>
+                <ul class="navSocial">
+                    <li><a href="#">GH.</a></li>
+                    <li><a href="#">IN.</a></li>
+                    <li><a href="#">IG.</a></li>
+                </ul>
+        </div>
     </header>
 
-    <section classw="about">
-        <ul>
-            <li>
-                <p></p>
-            </li>
-            <li><img src="" alt="banner image of"></li>
-        </ul>
-        <ul>
-            <li>
-                <p></p>
-                <img src="" alt="Courtney's signature">
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <h2>Email</h2>
-                        <p>courtney.giblets@gmail.com</p>
-                    </li>
-                    <li>
-                        <h2>Role</h2>
-                        <p>Front-End Web Developer</p>
-                    </li>
-                    <li>
-                        <h2>Phone</h2>
-                        <p>416 346 2565</p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+
+
+<!-- ================== HOME ================== -->
+    <section id="home" class="home">
+        <div class="wrapper">
+            
+            <h1>Hello I'm <span>Courtney Gibson</span></h1>
+            <img src="" alt="Portrait of Courtney">
+
+            <a href="#services" class="main-btn slow-scroll"><img src="images/scroll-icon.svg" alt=""></a>
+        </div>
+    </section>
+
+<!-- ================== ABOUT ME ================== -->
+
+    <section id="about" class="about">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <p>I am an adaptable and creative Front-End Web Developer with a background in film production and fast-paced kitchens. I use my
+                    understanding of film and design to create an accessible experience that speaks to an inclusive audience. I am a resilient problem solver and team player with a healthy curiosity for learning new skills.</p>
+                </li>
+                <li><img src="" alt="banner image of"></li>
+            </ul>
+            <ul>
+                <li>
+                    <p></p>
+                    <img src="" alt="Courtney's signature">
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h2>Email</h2>
+                            <p>courtney.giblets@gmail.com</p>
+                        </li>
+                        <li>
+                            <h2>Role</h2>
+                            <p>Front-End Web Developer</p>
+                        </li>
+                        <li>
+                            <h2>Phone</h2>
+                            <p>416 346 2565</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
 
-    <section class="skills">
+    <!-- ================== SKILLS ================== -->
+
+    <section id="skills" class="skills">
+        <div class="wrapper">
+            <h2>SKILLS</h2>
         // html, CSS3, sass, javscript, react, firebase, github, photoshop (8)
-        <ul>
-            <li>
-                <ul>
-                    <li><button>Icon</button></li>
-                    <li>Title</li>
-                </ul>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <ul>
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">HTML 5</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">CSS 3</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">SASS</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">JavaScript</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">React</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">Firebase</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">GitHub</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li><i class="devicon-firebase-plain colored"></i>
+                        <li class="title">Photoshop</li>
+                    </ul>
+                </li>
+
+            </ul>
 
         // stretch goal - experience timeframe
         <!-- <ul>
                 <li></li>
             </ul> -->
+        </div>
     </section>
 
-    <section class="portfolio">
-        <h1>Portfolio</h1>
-        <p></p>
-        <ul>
-            <li>project1</li>
-            <li>project2</li>
-            <li>project3</li>
-        </ul>
-    </section>
+<!-- ================== PORTFOLIO ================== -->
 
-    <section class="contact">
-        <form action="/my-handling-form-page" method="post">
+
+    <section id= "portfolio" class="portfolio">
+        <div class="wrapper">
+            <h1>Portfolio</h1>
+            <p></p>
             <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_mail" />
-                </li>
-                <li>
-                    <label for="subject">subject:</label>
-                    <input type="text" id="subject" name="user_subject" />
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send</button>
-                </li>
+                <li>project1</li>
+                <li>project2</li>
+                <li>project3</li>
             </ul>
-        </form>
+        </div>
+    </section>
 
+<!-- ================== CONTACT ================== -->
+
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail" />
+                    </li>
+                    <li>
+                        <label for="subject">subject:</label>
+                        <input type="text" id="subject" name="user_subject" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </section>
 
 </body>

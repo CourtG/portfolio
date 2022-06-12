@@ -1,0 +1,77 @@
+.navContainer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 40%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    padding: 85px 100px 85px 200px;
+}
+
+.navContainer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navContainer ul li a {
+    display: inline-block;
+}
+
+
+.navContainer ul li ul {
+    padding-left: 28px;
+    display: none;
+    width: 100% !important;
+}
+
+.navSocial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 200px;
+    bottom: 79px;
+}
+
+.navSocial li {
+    margin-right: 25px;
+}
+
+.navSocial li:last-child {
+    margin-right: 0;
+}
+
+.navSocial li a {
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+
+.navContainer .site-title {
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 51px;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-Container .site-title:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 5px;
+    height: 2px;
+    width: calc(100% - 5px);
+    transition: .35s ease-out;
+    background-color: #000000;
+}
+
+.navContainer .site-title:hover:before {
+    width: 0;
+    background-color: #f44647;
+}
