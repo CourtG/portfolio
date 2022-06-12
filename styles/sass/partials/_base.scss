@@ -6,9 +6,20 @@
     margin: 0 auto;
 }
 
-.section {
+.home {
+    min-height: 100vh;
+}
+
+.about, 
+.skills, 
+.portfolio, 
+.contact {
     margin-top: 65px;
     padding-top: 85px;
+}
+
+.contact {
+    padding-bottom: 85px;
 }
 
 body {
@@ -24,15 +35,12 @@ body {
     background-position: center;
 }
 
-li {
-    list-style: none;
-}
 
-a {
-    // list-style: none;
-    text-decoration: none !important;
+ul li {
+    text-decoration: none;
     color: inherit;
+    list-style: none;
+    list-style-type: none;
 }
-
 
 /******* BASE STYLES END *******/

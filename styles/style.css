@@ -273,9 +273,20 @@ p {
   margin: 0 auto;
 }
 
-.section {
+.home {
+  min-height: 100vh;
+}
+
+.about,
+.skills,
+.portfolio,
+.contact {
   margin-top: 65px;
   padding-top: 85px;
+}
+
+.contact {
+  padding-bottom: 85px;
 }
 
 body {
@@ -292,35 +303,14 @@ body {
   background-position: center;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none !important;
+ul li {
+  text-decoration: none;
   color: inherit;
+  list-style: none;
+  list-style-type: none;
 }
 
 /******* BASE STYLES END *******/
-.home {
-  height: 100vh;
-  padding: 85px 0;
-  margin: 0;
-}
-
-.home .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 100%;
-}
-
 .navContainer {
   position: fixed;
   right: 0;
@@ -375,17 +365,13 @@ a {
   margin-right: 25px;
 }
 
-.navSocial li:last-child {
-  margin-right: 0;
-}
-
 .navSocial li a {
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 5px;
 }
 
-.navContainer .site-title {
+.navTitle {
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 5px;
@@ -395,21 +381,29 @@ a {
   display: inline-block;
 }
 
-.nav-Container .site-title:before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  right: 5px;
-  height: 2px;
-  width: calc(100% - 5px);
-  -webkit-transition: 0.35s ease-out;
-  transition: 0.35s ease-out;
-  background-color: #000000;
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-.navContainer h1:hover:before {
-  width: 0;
-  background-color: #f44647;
+.home {
+  height: 100vh;
+  padding: 85px 0;
+  margin: 0;
+}
+
+.home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
 }
 
 .skillsWrap {
@@ -448,6 +442,19 @@ a {
 .skillsWrap .iconItem:hover h4 {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
+}
+
+.contactInfo {
+  background-color: #f44647;
+  color: #fff;
+  width: 340px;
+  padding: 30px 30px 50px 70px;
+  float: right;
+  margin: 0 0 40px 65px;
+}
+
+.contactInfo a:hover {
+  padding-left: 8px;
 }
 
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/

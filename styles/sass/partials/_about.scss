@@ -1,0 +1,36 @@
+.contactInfo {
+    background-color: $primary;
+    color: $lightText;
+    width: 340px;
+    padding: 30px 30px 50px 70px;
+    float: right;
+    margin: 0 0 40px 65px;
+}
+
+// .contactInfo li+li {
+//     margin-top: 44px;
+// }
+
+// .contactInfo h6 {
+//     font-size: 12px;
+//     letter-spacing: 5px;
+//     font-weight: 400;
+// }
+
+// .contactInfo a {
+//     color: #fff;
+//     display: inline-block;
+//     font-weight: 400;
+// }
+
+.contactInfo a:hover {
+    padding-left: 8px;
+}
+
+// .about-text {
+//     padding-top: 53px;
+// }
+
+// .about-text p {
+//     max-width: 670px;
+// }
