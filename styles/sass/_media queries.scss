@@ -1,0 +1,34 @@
+/****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
+@media (min-width: 2800px) {
+    h1 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+
+/****************** MEDIA QUERY FOR TABLET START ******************/
+@media (max-width: 900px) {
+    .headerInfo {
+        .headerImage {
+            flex-basis: 40%;
+        }
+    }
+
+}
+
+        /******* HEADER STYLES START - MOBILE SCREENS *******/
+        header {
+            padding-bottom: 50px;
+        }
+    
+        .headerInfo {
+            flex-direction: column-reverse;
+    
+            .headerImage {
+                margin: 31px 0;
+                max-width: 50%;
+                align-self: center;
+            }
+        }
+
+        
