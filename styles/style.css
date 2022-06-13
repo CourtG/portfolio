@@ -519,6 +519,7 @@ a {
 
 .about img {
   padding-bottom: 50px;
+  max-height: 80%;
 }
 
 .gallery-image {
@@ -745,20 +746,88 @@ p.contact-submit-holder {
   opacity: 1;
 }
 
-/****************** MEDIA QUERY FOR LARGE SCREENS ******************/
-@media (min-width: 2800px) {
+/****************** MEDIA QUERIES ******************/
+@media (max-width: 1366px) {
   h1 {
     font-size: 4vw;
     line-height: 4vw;
   }
+
+  .home {
+    padding: 60px 0;
+  }
+
+  .home img {
+    width: 470px;
+    max-height: calc(100vh - 120px);
+  }
+
+  .home h1 {
+    font-size: 120px;
+    line-height: 123px;
+  }
 }
-/****************** MEDIA QUERY FOR TABLET ******************/
-@media (max-width: 900px) {
+@media (min-width: 1200px) and (max-height: 660px) {
+  .home img {
+    width: 440px;
+  }
+
+  .home h1 {
+    font-size: 110px;
+    line-height: 113px;
+  }
+}
+@media (max-width: 1199px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .navSocial {
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .navContainer {
+    padding-bottom: 60px;
+  }
+
+  section {
+    margin-top: 10px;
+    padding-top: 80px;
+  }
+
+  .wrapper > section:last-of-type {
+    padding-bottom: 55px;
+  }
+}
+@media (max-width: 1199px) and (max-height: 550px) {
+  .navSocial {
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+
+  .navContainer {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  body {
+    background: #fff0f0;
+  }
+}
+@media (max-width: 991px) {
+  .wrapper {
+    margin-top: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   h1 {
     font-size: 2rem;
   }
 
-  .navList {
+  .navList, .navTitle, .navSocial {
     display: none;
     width: 100%;
   }
@@ -770,21 +839,139 @@ p.contact-submit-holder {
   .hamburger {
     display: block;
   }
-}
-/******* MEDIA QUERY FOR MOBILE SCREENS *******/
-header {
-  padding-bottom: 50px;
-}
 
-.headerInfo {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .home h1 {
+    font-size: 110px;
+    line-height: 113px;
+  }
+
+  .skillsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .skillsWrap .iconItem {
+    margin-bottom: 65px;
+  }
+
+  .homeContent {
+    width: 100%;
+  }
+
+  .about,
+.skills,
+.portfolio,
+.contact {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .contactInfo {
+    margin: 0 0 40px 40px;
+  }
 }
-.headerInfo .headerImage {
-  margin: 31px 0;
-  max-width: 50%;
-  -ms-flex-item-align: center;
-      align-self: center;
+@media (max-width: 767px) {
+  .home img {
+    width: auto;
+    max-height: 500px;
+    max-width: 65%;
+  }
+
+  .home h1 {
+    font-size: 70px;
+    line-height: 73px;
+    max-width: 340px;
+    letter-spacing: -2px;
+  }
+
+  .home {
+    padding: 55px 0 0;
+    height: auto;
+  }
+
+  .topText, .middleText {
+    padding-top: 45px;
+  }
+
+  .contactInfo {
+    width: 280px;
+    padding: 50px 30px 50px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .home img {
+    max-width: 85%;
+  }
+
+  .home h1 {
+    font-size: 56px;
+    line-height: 62px;
+    padding: 50px 0;
+  }
+
+  p, h2 {
+    margin-bottom: 20px;
+  }
+
+  .resume {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .resume li {
+    width: 100%;
+  }
+
+  .resume li + li {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .skillsWrap .iconItem {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .skillsWrap > div:nth-last-of-type(2) {
+    margin-bottom: 40px;
+  }
+
+  .skillsWrap .iconItem p {
+    max-width: 100%;
+  }
+
+  .contactInfo {
+    padding: 30px;
+    margin: 0 0 40px 0px;
+    float: none;
+    width: 100%;
+  }
+
+  .contactInfo li + li {
+    margin-top: 20px;
+  }
+
+  .topText, .middleText {
+    padding-top: 0;
+  }
 }
