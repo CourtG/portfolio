@@ -18,20 +18,22 @@ p {
 
 .home h1 {
     position: absolute;
-    color: #f44647;
+    color: $primary;
     font-weight: 800;
-    font-size: 120px;
+    font-size: 5rem;
     line-height: 143px;
     letter-spacing: -4px;
     z-index: 1;
     left: 0;
+    padding-top: 125px;
+    padding-left: 50px;
 }
 
 .home span {
     text-decoration: underline;
 }
 
-.section h2 {
+h2 {
     font-weight: 500;
     font-size: 26px;
     line-height: 150%;

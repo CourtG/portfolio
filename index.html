@@ -11,40 +11,42 @@
 <!-- ICONS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+<script src="https://kit.fontawesome.com/f1b037106f.js" crossorigin="anonymous"></script>
+
 <!-- STYLESHEET -->
 <link rel="stylesheet" href="./styles/style.css">
 
 
 
-<title>Courtney Gibson</title>
+<title>Court's Portfolio</title>
 
 </head>
 
 <body>
 
     <header>
-        <div id="nav-btn" class="nav-btn">
-            <span class="nav-btn-cover">
-                <span class="hamburger"></span>
-            </span>
-        </div>
         
         <div class="navContainer">
-            <a class="navTitle" href="#home">COURTNEY GIBSON</a>
             <nav>
-                <ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <a class="navTitle" href="#home">COURTNEY GIBSON</a>
+                <ul class="navList" id="navList">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-            </nav>
-        </div>
-            <ul class="navSocial">
-                <li><a href="#">GH.</a></li>
-                <li><a href="#">IN.</a></li>
-                <li><a href="#">IG.</a></li>
-            </ul>
+                </ul>
+            
+                <ul class="navSocial">
+                    <li><a href="https://github.com/CourtG">GH.</a></li>
+                    <li><a href="https://www.linkedin.com/in/courtney-gibson/">IN.</a></li>
+                    <li><a href="https://www.instagram.com/court.gibbles/">IG.</a></li>
+                </ul>
+        </nav>
         </div>
         
     </header>
@@ -56,9 +58,13 @@
         <div class="wrapper">
             <div class="homeContent">
                 <h1>Hello <br>I'm <span>Courtney Gibson</span></h1>
-                <img src="./assets/portrait_placeholder.jpg" alt="Portrait of Courtney">
+                <img src="./assets/portrait.jpeg" alt="Portrait of Courtney">
             </div>
-            <!-- <a href="#about" class="main-btn slow-scroll"><img src="./assets/scroll-icon.svg" alt=""></a> -->
+            <ul class="resume">
+                <li><a href="./assets/Courtney-Gibson-Resume.pdf">DOWNLOAD CV</a></li>
+                <li><a href="#portfolio">MY PORTFOLIO</a></li>
+                <li><a href="https://calendly.com/court-gibson">CALENDLY</a></li>
+            </ul>
         </div>
     </section>
 
@@ -156,45 +162,45 @@
 
     <section id= "portfolio" class="portfolio">
         <div class="wrapper">
-        
+        <h2>PORTFOLIO</h2>
         <div class="gallery-image">
             
             <div class="img-box">
-                <img src="https://picsum.photos/350/250?image=444" alt="" />
+                <img src="https://picsum.photos/350/250?image=444" alt="screenshot of Recipe Finder App" />
                 <div class="transparent-box">
                     <div class="caption">
-                        <p>Library</p>
-                        <p class="opacity-low">Architect Design</p>
+                        <p>Recipe Finder</p>
+                        <p class="opacity-low">JavaScript + REST API</p>
                     </div>
                 </div>
 
             </div>
             <div class="img-box">
-                <img src="https://picsum.photos/350/250/?image=232" alt="" />
+                <img src="https://picsum.photos/350/250/?image=431" alt="placeholder pic of latte art" />
                 <div class="transparent-box">
                     <div class="caption">
-                        <p>Night Sky</p>
-                        <p class="opacity-low">Cinematic</p>
+                        <p>An even BETTER app</p>
+                        <p class="opacity-low">Placeholder</p>
                     </div>
                 </div>
             </div>
 
             <div class="img-box">
-                <img src="https://picsum.photos/350/250/?image=431" alt="" />
+                <img src="https://picsum.photos/350/250/?image=431" alt="screenshot of Recipe Finder App " />
                 <div class="transparent-box">
                     <div class="caption">
-                        <p>Tea Talk</p>
-                        <p class="opacity-low">Composite</p>
+                        <p>Another Project</p>
+                        <p class="opacity-low">Placeholder</p>
                     </div>
                 </div>
             </div>
 
             <div class="img-box">
-                <img src="https://picsum.photos/350/250?image=474" alt="" />
+                <img src="https://picsum.photos/350/250?image=474" alt="placeholder image of a highway fading into hills on an overcast day" />
                 <div class="transparent-box">
                     <div class="caption">
-                        <p>Road</p>
-                        <p class="opacity-low">Landscape</p>
+                        <p>App Extraordinaire</p>
+                        <p class="opacity-low">Placeholder</p>
                     </div>
                 </div>
             </div>
@@ -206,32 +212,30 @@
 
     <section id="contact" class="contact">
         <div class="wrapper">
-            
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_mail" />
-                    </li>
-                    <li>
-                        <label for="subject">subject:</label>
-                        <input type="text" id="subject" name="user_subject" />
-                    </li>
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Send</button>
-                    </li>
-                </ul>
-            </form>
+            <h2>GET IN TOUCH</h2>
+
+            <div class="contactForm">
+                    <p>
+                        <input id="name" type="text" name="your-name" placeholder="NAME">
+                    </p>
+                    <p>
+                        <input id="contactEmail" type="email" name="your-email" placeholder="EMAIL">
+                    </p>
+                    <p>
+                        <input id="subject" type="text" name="your-subject" placeholder="SUBJECT">
+                    </p>
+                    <p>
+                        <textarea id="message" name="your-message" placeholder="MESSAGE"></textarea>
+                    </p>
+                    <p class="submitButton">
+                        <input type="submit" value="SEND">
+                    </p>
+            </div>
         </div>
     </section>
+
+<!--=================== SCRIPT ===================-->
+    <script src="/script.js"></script>
 
 </body>
 

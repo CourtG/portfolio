@@ -1,24 +1,35 @@
-/****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
-@media (min-width: 1200px) {
-
-    .nav-btn {
-        display: none;
+/****************** MEDIA QUERY FOR LARGE SCREENS ******************/
+@media (min-width: 2800px) {
+    h1 {
+        font-size: 4vw;
+        line-height: 4vw;
     }
-
-        
 }
 
-/****************** MEDIA QUERY FOR TABLET START ******************/
+/****************** MEDIA QUERY FOR TABLET ******************/
 @media (max-width: 900px) {
-    .headerInfo {
-        .headerImage {
-            flex-basis: 40%;
-        }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navList {
+        display: none;
+        width: 100%;
+    }
+
+    .navList.show {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+
     }
 
 }
 
-        /******* HEADER STYLES START - MOBILE SCREENS *******/
+/******* MEDIA QUERY FOR MOBILE SCREENS *******/
         header {
             padding-bottom: 50px;
         }

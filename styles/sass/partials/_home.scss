@@ -3,7 +3,6 @@
 
 .home {
     min-height: 100vh;
-    padding: 85px 0;
     margin: 0;
 }
 
@@ -15,10 +14,41 @@
 }
 
 .home img {
-    max-height: calc(100vh - 170px);
-    width: 536px;
+    max-height: calc(95vh - 185px);
+    width: auto;
     object-fit: cover;
 }
 
+.resume {
+    background-color: #f44647;
+    display: flex;
+    align-items: center;
+    padding: 50px 70px;
+    margin-top: 45px;
+}
 
+.resume li+li {
+    margin-left: 100px;
+}
+
+.resume a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.resume a:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    transition: .35s ease-out;
+    background-color: #fff;
+}
 

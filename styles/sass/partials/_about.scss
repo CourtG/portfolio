@@ -7,28 +7,21 @@
     margin: 0 0 40px 65px;
 }
 
-// .contactInfo li+li {
-//     margin-top: 44px;
-// }
-
 .contactInfo h3 {
     font-size: 16px;
     letter-spacing: 5px;
     font-weight: 400;
 }
 
-// .contactInfo a {
-//     color: #fff;
-//     display: inline-block;
-//     font-weight: 400;
-// }
-
 .contactInfo a:hover {
     padding-left: 8px;
 }
 
 .about p {
-    padding-top: 53px;
     max-width: 670px;
     margin-bottom: 50px;
+}
+
+.about img {
+    padding-bottom: 50px;
 }
