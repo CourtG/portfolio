@@ -247,7 +247,7 @@ p {
   position: absolute;
   color: #f44647;
   font-weight: 800;
-  font-size: 140px;
+  font-size: 120px;
   line-height: 143px;
   letter-spacing: -4px;
   z-index: 1;
@@ -268,13 +268,9 @@ p {
 
 /******* BASE STYLES START *******/
 .wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.home {
-  min-height: 100vh;
+  max-width: 800px;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .about,
@@ -336,11 +332,11 @@ ul li {
           align-items: flex-start;
 }
 
-.navContainer ul li a {
+.navList li a {
   display: inline-block;
 }
 
-.navContainer ul li ul {
+.navList li ul {
   padding-left: 28px;
   display: none;
   width: 100% !important;
@@ -382,18 +378,17 @@ ul li {
 }
 
 a {
-  list-style: none;
   text-decoration: none;
   color: inherit;
 }
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   padding: 85px 0;
   margin: 0;
 }
 
-.home .wrapper {
+.homeContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,27 +401,36 @@ a {
   height: 100%;
 }
 
+.home img {
+  max-height: calc(100vh - 170px);
+  width: 536px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .skillsWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 80px;
 }
 
-.iconItem img {
-  height: 70%;
-  width: auto;
+.iconItem li img {
+  max-height: 80px;
   margin-bottom: 0;
   text-shadow: 1px 1px 1px #ccc;
 }
 
-.skillsWrap .iconItem {
-  width: calc(12% - 65px);
+.iconItem {
+  width: calc(31% - 65px);
   margin-bottom: 80px;
 }
 
@@ -453,8 +457,20 @@ a {
   margin: 0 0 40px 65px;
 }
 
+.contactInfo h3 {
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
 .contactInfo a:hover {
   padding-left: 8px;
+}
+
+.about p {
+  padding-top: 53px;
+  max-width: 670px;
+  margin-bottom: 50px;
 }
 
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/

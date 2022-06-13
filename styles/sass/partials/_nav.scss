@@ -16,12 +16,12 @@
     align-items: flex-start;
 }
 
-.navContainer ul li a {
+.navList li a {
     display: inline-block;
 }
 
 
-.navContainer ul li ul {
+.navList li ul {
     padding-left: 28px;
     display: none;
     width: 100% !important;
@@ -61,7 +61,6 @@
 }
 
 a {
-    list-style: none;
     text-decoration: none;
     color:inherit;
 }

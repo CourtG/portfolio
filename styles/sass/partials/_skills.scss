@@ -1,19 +1,21 @@
+
+
 .skillsWrap {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding-top: 80px;
 }
 
-.iconItem img {
-    height: 70%;
-    width: auto;
+.iconItem li img {
+    max-height: 80px;
     margin-bottom: 0;
     text-shadow: 1px 1px 1px #ccc;
 }
 
-.skillsWrap .iconItem {
-    width: calc(12% - 65px);
+.iconItem {
+    width: calc(31% - 65px);
     margin-bottom: 80px;
 }
 
