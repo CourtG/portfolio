@@ -1,33 +1,30 @@
-
-
 .skillsWrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 80px;
 }
 
 .iconItem li img {
-    max-height: 80px;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 1px #ccc;
+  max-height: 80px;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 1px #ccc;
 }
 
 .iconItem {
-    width: calc(31% - 65px);
-    margin-bottom: 80px;
+  width: calc(31% - 75px);
+  margin-bottom: 80px;
 }
 
-
 .skillsWrap .iconItem h4 {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
-    margin-top: 30px;
-    transition: .35s ease-out;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 30px;
+  transition: 0.35s ease-out;
 }
 
 .skillsWrap .iconItem:hover h4 {
-    transform: translateX(-10px);
+  transform: translateX(-5px);
 }

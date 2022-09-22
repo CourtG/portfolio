@@ -1,242 +1,261 @@
 /****************** MEDIA QUERIES ******************/
 
 @media (max-width: 1366px) {
+  h1 {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
 
-    h1 {
-        font-size: 4vw;
-        line-height: 4vw;
-    }
+  .home {
+    padding-bottom: 60px;
+  }
 
-    .home {
-        padding: 60px 0;
-    }
+  .portrait {
+    width: 470px;
+    max-height: calc(100vh - 120px);
+  }
 
-    .home img {
-        width: 470px;
-        max-height: calc(100vh - 120px);
-    }
-
-    .home h1 {
-        font-size: 120px;
-        line-height: 123px;
-    }
+  .home h1 {
+    font-size: 120px;
+    line-height: 123px;
+  }
 }
 
 @media (min-width: 1200px) and (max-height: 660px) {
+  .portrait {
+    width: 440px;
+  }
 
-    .home img {
-        width: 440px;
-    }
-
-    .home h1 {
-        font-size: 110px;
-        line-height: 113px;
-    }
-
+  .home h1 {
+    font-size: 110px;
+    line-height: 113px;
+  }
 }
 
 @media (max-width: 1199px) {
+  .wrapper {
+    margin: 0 auto;
+  }
 
-    .wrapper {
-        margin: 0 auto;
-    }
+  .navSocial {
+    left: 15px;
+    bottom: 15px;
+  }
 
-    .navSocial {
-        left: 15px;
-        bottom: 15px;
-    }
+  .navContainer {
+    padding-bottom: 60px;
+  }
 
-    .navContainer {
-        padding-bottom: 60px;
-    }
+  #section {
+    margin-top: 10px;
+    padding-top: 80px;
+  }
 
-    section {
-        margin-top: 10px;
-        padding-top: 80px;
-    }
-
-    .wrapper>section:last-of-type {
-        padding-bottom: 55px;
-    }
-
+  .wrapper > section:last-of-type {
+    padding-bottom: 55px;
+  }
 }
 
 @media (max-width: 1199px) and (max-height: 550px) {
+  .navSocial {
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
 
-    .navSocial {
-        position: relative;
-        left: auto;
-        bottom: auto;
-    }
-
-    .navContainer {
-        padding-bottom: 60px;
-    }
-
+  .navContainer {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 1020px) {
-
-    body {
-        background: #fff0f0;
-    }
-
+  body {
+    background: #fff0f0;
+  }
 }
 
 @media (max-width: 991px) {
-    
-    .wrapper {
-        margin-top: 48px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .wrapper {
+    margin-top: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    h1 {
-        font-size: 2rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    .navList, .navTitle, .navSocial {
-        display: none;
-        width: 100%;
-    }
+  .navList,
+  .navTitle,
+  .navSocial {
+    display: none;
+    width: 100%;
+  }
 
-    .navList.show {
-        display: block;
-    }
+  .navList.show {
+    display: block;
+  }
 
-    .hamburger {
-        display: block;
+  .hamburger {
+    display: block;
+  }
 
-    }
-    
-    .home {
-        display: flex;
-        align-items: center;
-    }
+  .home {
+    display: flex;
+    align-items: center;
+  }
 
-    .home h1 {
-        font-size: 110px;
-        line-height: 113px;
-    }
+  .home h1 {
+    font-size: 110px;
+    line-height: 113px;
+  }
 
-    .skillsWrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .skillsWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .skillsWrap .iconItem {
-        margin-bottom: 65px;
-    }
+  .skillsWrap .iconItem {
+    margin-bottom: 65px;
+  }
 
-    .homeContent {
-        width: 100%;
-    }
+  .homeContent {
+    width: 100%;
+  }
 
-    .about,
-    .skills,
-    .portfolio,
-    .contact {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
+  .about,
+  .skills,
+  .portfolio,
+  .contact {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
 
-    .contactInfo {
-        margin: 0 0 40px 40px;
-    }
-
+  .contactInfo {
+    margin: 0 0 40px 40px;
+  }
 }
 
 @media (max-width: 767px) {
+  .portrait {
+    width: auto;
+    max-height: 500px;
+    max-width: 65%;
+  }
 
+  .home h1 {
+    font-size: 70px;
+    line-height: 73px;
+    max-width: 340px;
+    letter-spacing: -2px;
+  }
 
+  .home {
+    padding: 55px 0 0;
+    height: auto;
+  }
 
-    .home img {
-        width: auto;
-        max-height: 500px;
-        max-width: 65%;
-    }
+  .topText,
+  .middleText {
+    padding-top: 45px;
+  }
 
-    .home h1 {
-        font-size: 70px;
-        line-height: 73px;
-        max-width: 340px;
-        letter-spacing: -2px;
-    }
-
-    .home {
-        padding: 55px 0 0;
-        height: auto;
-    }
-
-    .topText, .middleText {
-        padding-top: 45px;
-    }
-
-    .contactInfo {
-        width: 280px;
-        padding: 50px 30px 50px 40px;
-    }
-
+  .contactInfo {
+    width: 280px;
+    padding: 50px 30px 50px 40px;
+  }
 }
 
 @media (max-width: 575px) {
+  .portrait {
+    max-width: 85%;
+  }
 
-    .home img {
-        max-width: 85%;
-    }
+  .home h1 {
+    font-size: 56px;
+    line-height: 62px;
+    padding: 50px 0;
+  }
 
-    .home h1 {
-        font-size: 56px;
-        line-height: 62px;
-        padding: 50px 0;
-    }
+  p,
+  h2 {
+    margin-bottom: 20px;
+  }
 
-    p, h2 {
-        margin-bottom: 20px;
-    }
+  .resume {
+    flex-wrap: wrap;
+  }
 
+  .resume li {
+    width: 100%;
+  }
 
+  .resume li + li {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 
-    .resume {
-        flex-wrap: wrap;
-    }
+  .skillsWrap .iconItem {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
-    .resume li {
-        width: 100%;
-    }
+  .skillsWrap > div:nth-last-of-type(2) {
+    margin-bottom: 40px;
+  }
 
-    .resume li+li {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+  .skillsWrap .iconItem p {
+    max-width: 100%;
+  }
 
-    .skillsWrap .iconItem {
-        width: 100%;
-        margin-bottom: 40px;
-    }
+  .contactInfo {
+    padding: 30px;
+    margin: 0 0 40px 0px;
+    float: none;
+    width: 100%;
+  }
 
-    .skillsWrap>div:nth-last-of-type(2) {
-        margin-bottom: 40px;
-    }
+  .contactInfo li + li {
+    margin-top: 20px;
+  }
 
-    .skillsWrap .iconItem p {
-        max-width: 100%;
-    }
+  .topText,
+  .middleText {
+    padding-top: 0;
+  }
+}
 
-    .contactInfo {
-        padding: 30px;
-        margin: 0 0 40px 0px;
-        float: none;
-        width: 100%;
-    }
+// NEW PORT CSS
 
-    .contactInfo li+li {
-        margin-top: 20px;
-    }
+@media (max-width: 800px) {
+  .point {
+    min-width: 15px;
+    height: 15px;
+  }
+  //   html,
+  //   body {
+  //     font-size: 15px;
+  //   }
+}
+@media (max-width: 650px) {
+  //   html,
+  //   body {
+  //     font-size: 14px;
+  //   }
 
-    .topText, .middleText {
-        padding-top: 0;
-    }
-}   
+  .point {
+    min-width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 450px) {
+  //   html,
+  //   body {
+  //     font-size: 10px;
+  //   }
+  p {
+    padding: 10px !important;
+  }
+}

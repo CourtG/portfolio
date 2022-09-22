@@ -247,7 +247,7 @@ p {
   position: absolute;
   color: #f44647;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 143px;
   letter-spacing: -4px;
   z-index: 1;
@@ -266,6 +266,10 @@ h2 {
   line-height: 150%;
   letter-spacing: 5px;
   margin-bottom: 40px;
+}
+
+h3 {
+  color: #fff;
 }
 
 /******* BASE STYLES START *******/
@@ -290,7 +294,7 @@ h2 {
 body {
   color: #000000;
   line-height: 2;
-  font-size: 15px;
+  font-size: 0.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   min-width: 320px;
@@ -309,6 +313,45 @@ ul li {
 }
 
 /******* BASE STYLES END *******/
+.arrow {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
 .navContainer {
   position: fixed;
   right: 0;
@@ -341,11 +384,12 @@ ul li {
 
 .navList li a {
   display: inline-block;
+  cursor: pointer;
 }
 
 .hamburger {
   display: none;
-  font-size: 20px;
+  font-size: 0.75rem;
   background-color: #fff;
   border: 0;
   cursor: pointer;
@@ -370,13 +414,13 @@ ul li {
 }
 
 .navSocial li a {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 30px;
   letter-spacing: 5px;
 }
 
 .navTitle {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 30px;
   letter-spacing: 5px;
   font-weight: 700;
@@ -408,7 +452,7 @@ a {
   height: 100%;
 }
 
-.home img {
+.portrait {
   max-height: calc(95vh - 185px);
   width: auto;
   -o-object-fit: cover;
@@ -424,7 +468,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 70px;
-  margin-top: 45px;
+  margin-top: 0px;
 }
 
 .resume li + li {
@@ -462,9 +506,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-top: 80px;
 }
 
@@ -475,7 +519,7 @@ a {
 }
 
 .iconItem {
-  width: calc(31% - 65px);
+  width: calc(31% - 75px);
   margin-bottom: 80px;
 }
 
@@ -489,8 +533,8 @@ a {
 }
 
 .skillsWrap .iconItem:hover h4 {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 
 .contactInfo {
@@ -604,6 +648,112 @@ a {
 
 .opacity-low {
   opacity: 0.5;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.timeline ul li {
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.point {
+  min-width: 20px;
+  height: 20px;
+  background-color: #f44647;
+  border-radius: 100%;
+  z-index: 2;
+  border: 2px #333333 solid;
+  position: relative;
+  left: 1px;
+}
+
+.timeline ul li .content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+  padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+  padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+  padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+  padding-left: 0;
+}
+
+.timeline ul li .date {
+  width: 50%;
+  padding: 0 20px;
+  font-weight: normal;
+  color: #ffecec;
+}
+
+.timeline ul li .date h4 {
+  background-color: #f44647;
+  width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+  padding: 10px 20px;
+  background-color: #f44647;
+  margin-bottom: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-top: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+  float: right;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 50%;
+  background-color: #333333;
 }
 
 .contactForm {
@@ -753,9 +903,9 @@ p.contact-submit-holder {
     line-height: 4vw;
   }
   .home {
-    padding: 60px 0;
+    padding-bottom: 60px;
   }
-  .home img {
+  .portrait {
     width: 470px;
     max-height: calc(100vh - 120px);
   }
@@ -765,7 +915,7 @@ p.contact-submit-holder {
   }
 }
 @media (min-width: 1200px) and (max-height: 660px) {
-  .home img {
+  .portrait {
     width: 440px;
   }
   .home h1 {
@@ -784,7 +934,7 @@ p.contact-submit-holder {
   .navContainer {
     padding-bottom: 60px;
   }
-  section {
+  #section {
     margin-top: 10px;
     padding-top: 80px;
   }
@@ -816,7 +966,9 @@ p.contact-submit-holder {
   h1 {
     font-size: 2rem;
   }
-  .navList, .navTitle, .navSocial {
+  .navList,
+.navTitle,
+.navSocial {
     display: none;
     width: 100%;
   }
@@ -871,7 +1023,7 @@ p.contact-submit-holder {
   }
 }
 @media (max-width: 767px) {
-  .home img {
+  .portrait {
     width: auto;
     max-height: 500px;
     max-width: 65%;
@@ -886,7 +1038,8 @@ p.contact-submit-holder {
     padding: 55px 0 0;
     height: auto;
   }
-  .topText, .middleText {
+  .topText,
+.middleText {
     padding-top: 45px;
   }
   .contactInfo {
@@ -895,7 +1048,7 @@ p.contact-submit-holder {
   }
 }
 @media (max-width: 575px) {
-  .home img {
+  .portrait {
     max-width: 85%;
   }
   .home h1 {
@@ -903,7 +1056,8 @@ p.contact-submit-holder {
     line-height: 62px;
     padding: 50px 0;
   }
-  p, h2 {
+  p,
+h2 {
     margin-bottom: 20px;
   }
   .resume {
@@ -936,7 +1090,25 @@ p.contact-submit-holder {
   .contactInfo li + li {
     margin-top: 20px;
   }
-  .topText, .middleText {
+  .topText,
+.middleText {
     padding-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  .point {
+    min-width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .point {
+    min-width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 450px) {
+  p {
+    padding: 10px !important;
   }
 }

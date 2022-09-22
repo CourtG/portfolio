@@ -1,65 +1,65 @@
 .navContainer {
-    position: fixed;
-    right: 0;
-    top: 0;
-    
-    height: 100vh;
-    max-width: 40%;
-    width: 100%;
-    z-index: 1;
-    overflow: hidden;
-    padding: 250px 100px 85px 70px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 40%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  padding: 250px 100px 85px 70px;
 }
 
 .navList {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .navList li a {
-    display: inline-block;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .hamburger {
-    display: none;
-    font-size: 20px;
-    background-color: $lightText;
-    border: 0;
-    cursor: pointer;
+  display: none;
+  font-size: 0.75rem;
+  background-color: $lightText;
+  border: 0;
+  cursor: pointer;
 }
 
 .navSocial {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 70px;
 }
 
 .navSocial li {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .navSocial li a {
-    font-size: 12px;
-    line-height: 30px;
-    letter-spacing: 5px;
+  font-size: 0.75rem;
+  line-height: 30px;
+  letter-spacing: 5px;
 }
 
 .navTitle {
-    font-size: 12px;
-    line-height: 30px;
-    letter-spacing: 5px;
-    font-weight: 700;
-    margin-bottom: 51px;
-    position: relative;
-    display: inline-block;
+  font-size: 0.75rem;
+  line-height: 30px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-bottom: 51px;
+  position: relative;
+  display: inline-block;
 }
 
 a {
-    text-decoration: none;
-    color:inherit;
+  text-decoration: none;
+  color: inherit;
 }

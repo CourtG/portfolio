@@ -19,6 +19,7 @@
 
 
 <title>Court's Portfolio</title>
+<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
 </head>
 
@@ -28,9 +29,22 @@
         
         <div class="navContainer">
             <nav>
-                <button class="hamburger" id="hamburger">
+                <!-- <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
+                <div class="topnav">
+                    <a href="#home" class="active">Logo</a>
+                    <div id="myLinks">
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div> 
+        </div> --> 
 
                 <a class="navTitle" href="#home">COURTNEY GIBSON</a>
                 <ul class="navList" id="navList">
@@ -59,13 +73,18 @@
         <div class="wrapper">
             <div class="homeContent">
                 <h1>Hello <br>I'm <span>Courtney Gibson</span></h1>
-                <img src="./assets/portrait.jpeg" alt="Portrait of Courtney">
+                <img class="portrait" src="./assets/portrait.jpeg" width="400" alt="Portrait of Courtney">
             </div>
             <ul class="resume">
                 <li><a href="./assets/Courtney-Gibson-Resume.pdf">DOWNLOAD CV</a></li>
                 <li><a href="#portfolio">MY PORTFOLIO</a></li>
                 <li><a href="https://calendly.com/court-gibson">CALENDLY</a></li>
             </ul>
+        </div>
+        <div class="arrow bounce">
+            <a class="scroll icon" href="#about" alt="scroll down icon">
+                <img src="./assets/scroll-icon.svg" width="50">
+            </a>
         </div>
     </section>
 
@@ -87,7 +106,7 @@
                 </li>
                 <li>
                     <h3>ROLE</h3>
-                    <p>Front-End Web Developer</p>
+                    <p>Web Developer</p>
                 </li>
                 <li>
                     <h3>PHONE</h3>
@@ -103,7 +122,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam, dolorum quia ipsum, corrupti excepturi
                 consequatur eum illo repudiandae inventore harum vitae nostrum, id suscipit ab velit tenetur sed dolorem.</p>
 
-            <img src="" alt="Courtney's signature">
+            <img src="./assets/signature.svg" width="250" alt="Courtney Gibson's signature">
         </div>
     </section>
 
@@ -116,44 +135,81 @@
 
             <div class ="skillsWrap">
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></li>
+                    <li><img src="./assets/skills-icons/html.svg" /></li>
                     <li><h4>HTML 5</h4></li>
                 </ul>
 
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></li>
-                    <li><h4>CSS 3</h4></li>
-                </ul>
-
-                <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /></li>
-                    <li><h4>SASS</h4></li>
-                </ul>
-
-                <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></li>
+                    <li><img src="./assets/skills-icons/javascript.svg" /></li>
                     <li><h4>JavaScript</h4></li>
                 </ul>
         
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></li>
+                    <li><img src="./assets/skills-icons/react.svg" /></li>
                     <li><h4>React</h4></li>
                 </ul>
 
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" /></li>
+                    <li><img src="./assets/skills-icons/vscode.svg" /></li>
+                    <li><h4>VS Code</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/git.svg" /></li>
+                    <li><h4>Git</h4></li>
+                </ul>
+        
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/jquery.svg" /></li>
+                    <li><h4>JQuery</h4></li>
+                </ul>                
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/nodejs.svg" /></li>
+                    <li><h4>Node JS</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/css.svg" /></li>
+                    <li><h4>CSS 3</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/sass.svg" /></li>
+                    <li><h4>SASS</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/bootstrap.svg" /></li>
+                    <li><h4>Bootstrap</h4></li>
+                </ul>
+        
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/tailwind.svg" /></li>
+                    <li><h4>Tailwind</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/firebase.svg" /></li>
                     <li><h4>Firebase</h4></li>
                 </ul>
 
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></li>
+                    <li><img src="./assets/skills-icons/github.svg" /></li>
                     <li><h4>GitHub</h4></li>
+                </ul>
+
+                <ul class="iconItem">
+                    <li><img src="./assets/skills-icons/canva.svg" /></li>
+                    <li><h4>Canva</h4></li>
                 </ul>
         
                 <ul class="iconItem">
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" /></li>
+                    <li><img src="./assets/skills-icons/photoshop.svg" /></li>
                     <li><h4>Photoshop</h4></li>
                 </ul>
+
+
             </div>    
         </div>
     </section>
@@ -164,7 +220,43 @@
     <section id= "portfolio" class="portfolio">
         <div class="wrapper">
         <h2>PORTFOLIO</h2>
-        <div class="gallery-image">
+
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Event 1</h3>
+                        <p>Event 1 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>January 2020</h4>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="content">
+                        <h3>Event 2</h3>
+                        <p>Event 2 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>July 2019</h4>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="content">
+                        <h3>Event 3</h3>
+                        <p>Event 3 Description</p>
+                    </div>
+                    <div class="point"></div>
+                    <div class="date">
+                        <h4>March 2019</h4>
+                    </div>
+                    </li>
+                    ...
+                </ul>
+                </div>
+        <!-- <div class="gallery-image">
             
             <div class="img-box">
                 <a href= "https://transcendent-faun-38e59b.netlify.app/"><img src="./assets/pro1.png" alt="screenshot of Recipe Finder App" /></a>
@@ -205,7 +297,7 @@
                         <p class="opacity-low">Placeholder</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -237,7 +329,7 @@
     </section>
 
 <!--=================== SCRIPT ===================-->
-    <script src="/script.js"></script>
+
 
 </body>
 

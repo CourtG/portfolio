@@ -1,13 +1,15 @@
-@import './partials/setup';
-@import './partials/variables';
-@import './partials/typography';
-@import './partials/base';
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/typography";
+@import "./partials/base";
 
-@import './partials/nav';
-@import './partials/home';
-@import './partials/skills';
-@import './partials/about';
-@import './partials/portfolio';
-@import './partials/contact';
+@import "./partials/animations";
 
-@import './partials/mediaQueries';
+@import "./partials/nav";
+@import "./partials/home";
+@import "./partials/skills";
+@import "./partials/about";
+@import "./partials/portfolio";
+@import "./partials/contact";
+
+@import "./partials/mediaQueries";

@@ -1,54 +1,50 @@
-
-
-
 .home {
-    min-height: 100vh;
-    margin: 0;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .homeContent {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
 
-.home img {
-    max-height: calc(95vh - 185px);
-    width: auto;
-    object-fit: cover;
+.portrait {
+  max-height: calc(95vh - 185px);
+  width: auto;
+  object-fit: cover;
 }
 
 .resume {
-    background-color: #f44647;
-    display: flex;
-    align-items: center;
-    padding: 50px 70px;
-    margin-top: 45px;
+  background-color: #f44647;
+  display: flex;
+  align-items: center;
+  padding: 50px 70px;
+  margin-top: 0px;
 }
 
-.resume li+li {
-    margin-left: 100px;
+.resume li + li {
+  margin-left: 100px;
 }
 
 .resume a {
-    color: #fff;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 30px;
-    letter-spacing: 5px;
-    position: relative;
-    display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  position: relative;
+  display: inline-block;
 }
 
 .resume a:before {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    right: 0;
-    height: 2px;
-    width: 100%;
-    transition: .35s ease-out;
-    background-color: #fff;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  transition: 0.35s ease-out;
+  background-color: #fff;
 }
-
