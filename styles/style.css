@@ -274,7 +274,7 @@ h3 {
 
 /******* BASE STYLES START *******/
 .wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin-left: 50px;
 }
@@ -316,6 +316,7 @@ ul li {
 .arrow {
   text-align: left;
   padding-left: 50px;
+  padding-top: 20px;
 }
 
 .bounce {
@@ -540,7 +541,6 @@ a {
 .contactInfo {
   background-color: #f44647;
   color: #fff;
-  width: 340px;
   padding: 30px 30px 50px 70px;
   float: right;
   margin: 0 0 40px 65px;
@@ -580,7 +580,7 @@ a {
 
 .gallery-image img {
   height: 250px;
-  width: 350px;
+  width: 250px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.4s ease;
@@ -653,7 +653,7 @@ a {
 .timeline {
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 .timeline ul li {
@@ -666,9 +666,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .point {
@@ -684,7 +684,6 @@ a {
 
 .timeline ul li .content {
   width: 50%;
-  padding: 0 20px;
 }
 
 .timeline ul li:nth-child(odd) .content {
@@ -696,7 +695,13 @@ a {
 }
 
 .timeline ul li:nth-child(even) .content {
-  padding-right: 0;
+  padding-left: 60px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .timeline ul li:nth-child(even) .date {
@@ -707,11 +712,9 @@ a {
   width: 50%;
   padding: 0 20px;
   font-weight: normal;
-  color: #ffecec;
 }
 
 .timeline ul li .date h4 {
-  background-color: #f44647;
   width: 100px;
   text-align: center;
   padding: 5px 10px;
@@ -719,8 +722,9 @@ a {
 }
 
 .timeline ul li .content h3 {
-  padding: 10px 20px;
-  background-color: #f44647;
+  padding: 10px 0px;
+  color: #f44647;
+  font-size: 1rem;
   margin-bottom: 0;
   text-align: center;
   border-top-left-radius: 10px;
@@ -729,7 +733,6 @@ a {
 
 .timeline ul li .content p {
   padding: 10px 20px;
-  background-color: #fff;
   margin-top: 0;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -747,17 +750,12 @@ a {
   float: right;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 3px;
-  left: 50%;
-  background-color: #333333;
+.timeline ul li .date img {
+  max-width: 450px;
 }
 
 .contactForm {
-  margin-top: 40px;
+  margin: 40px 100px 40px 50px;
 }
 
 .contactForm * {

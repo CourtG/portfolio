@@ -7,7 +7,7 @@
 
 .gallery-image img {
   height: 250px;
-  width: 350px;
+  width: 250px;
   transform: scale(1);
   transition: transform 0.4s ease;
 }
@@ -72,14 +72,14 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 .timeline ul li {
   margin-bottom: 50px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
 }
 .point {
   min-width: 20px;
@@ -93,7 +93,7 @@
 }
 .timeline ul li .content {
   width: 50%;
-  padding: 0 20px;
+  // padding: 0 60px;
 }
 .timeline ul li:nth-child(odd) .content {
   padding-left: 0;
@@ -102,7 +102,9 @@
   padding-right: 0;
 }
 .timeline ul li:nth-child(even) .content {
-  padding-right: 0;
+  padding-left: 60px;
+  align-items: right;
+  justify-content: right;
 }
 .timeline ul li:nth-child(even) .date {
   padding-left: 0;
@@ -111,18 +113,19 @@
   width: 50%;
   padding: 0 20px;
   font-weight: normal;
-  color: $background;
+  // color: $background;
 }
 .timeline ul li .date h4 {
-  background-color: $primary;
+  // background-color: $primary;
   width: 100px;
   text-align: center;
   padding: 5px 10px;
   border-radius: 10px;
 }
 .timeline ul li .content h3 {
-  padding: 10px 20px;
-  background-color: $primary;
+  padding: 10px 0px;
+  color: $primary;
+  font-size: 1rem;
   margin-bottom: 0;
   text-align: center;
   border-top-left-radius: 10px;
@@ -130,7 +133,7 @@
 }
 .timeline ul li .content p {
   padding: 10px 20px;
-  background-color: $lightText;
+  // background-color: $lightText;
   margin-top: 0;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -142,11 +145,15 @@
 .timeline ul li:nth-child(even) .date h4 {
   float: right;
 }
-.timeline::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 3px;
-  left: 50%;
-  background-color: #333333;
+// .timeline::before {
+//   content: "";
+//   position: absolute;
+//   height: 100%;
+//   width: 3px;
+//   left: 52.75%;
+//   background-color: #333333;
+// }
+
+.timeline ul li .date img {
+  max-width: 450px;
 }
