@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="origin">
 
 <!-- FONTS -->
 <link href='https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap' rel='stylesheet' type='text/css'>
@@ -76,7 +77,7 @@
                 <img class="portrait" src="./assets/portrait.jpeg" width="400" alt="Portrait of Courtney">
             </div>
             <ul class="resume">
-                <li><a href="./assets/Courtney-Gibson-Resume.pdf">DOWNLOAD CV</a></li>
+                <li><a href="./assets/CourtneyGibsonResume.pdf">DOWNLOAD CV</a></li>
                 <li><a href="#portfolio">MY PORTFOLIO</a></li>
                 <li><a href="https://calendly.com/court-gibson">CALENDLY</a></li>
             </ul>
@@ -356,21 +357,23 @@
             <h2>GET IN TOUCH</h2>
 
             <div class="contactForm">
+                <form action="https://formsubmit.co/courtney.giblets@gmail.com" method="POST">
                     <p>
-                        <input id="name" type="text" name="your-name" placeholder="NAME">
+                        <input id="name" type="text" name="your-name" placeholder="NAME" required>
                     </p>
                     <p>
-                        <input id="contactEmail" type="email" name="your-email" placeholder="EMAIL">
+                        <input id="contactEmail" type="email" name="your-email" placeholder="EMAIL" required>
                     </p>
                     <p>
                         <input id="subject" type="text" name="your-subject" placeholder="SUBJECT">
                     </p>
                     <p>
-                        <textarea id="message" name="your-message" placeholder="MESSAGE"></textarea>
+                        <textarea id="message" name="your-message" placeholder="MESSAGE" required></textarea>
                     </p>
                     <p class="submitButton">
                         <input type="submit" value="SEND">
                     </p>
+                </form>
             </div>
         </div>
     </section>
