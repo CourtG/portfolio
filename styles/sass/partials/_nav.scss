@@ -1,4 +1,4 @@
-.navContainer {
+.nav-container {
   position: fixed;
   right: 0;
   top: 0;
@@ -10,28 +10,20 @@
   padding: 250px 100px 85px 70px;
 }
 
-.navList {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+// .nav-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: flex-start;
+// }
 
-.navList li a {
-  display: inline-block;
-  cursor: pointer;
-}
+// .nav-list li a {
+//   display: inline-block;
+//   cursor: pointer;
+// }
 
-.hamburger {
-  display: none;
-  font-size: 0.75rem;
-  background-color: $lightText;
-  border: 0;
-  cursor: pointer;
-}
-
-.navSocial {
+.nav-soc {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -39,18 +31,77 @@
   left: 70px;
 }
 
-.navSocial li {
+.nav-soc li {
   margin-right: 25px;
 }
 
-.navSocial li a {
+.nav-soc li a {
   font-size: 0.75rem;
   line-height: 30px;
   letter-spacing: 5px;
 }
 
-.navTitle {
-  font-size: 0.75rem;
+// .site-title {
+//   font-size: 0.75rem;
+//   line-height: 30px;
+//   letter-spacing: 5px;
+//   font-weight: 700;
+//   margin-bottom: 51px;
+//   position: relative;
+//   display: inline-block;
+// }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-list li a {
+  display: inline-block;
+}
+
+.nav-list li.current a {
+  color: #f44647;
+}
+
+.nav-list li ul {
+  padding-left: 28px;
+  display: none;
+  width: 100% !important;
+}
+
+// .nav-soc {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   position: absolute;
+//   left: 200px;
+//   bottom: 79px;
+// }
+
+// .nav-soc li {
+//   margin-right: 25px;
+// }
+
+// .nav-soc li:last-child {
+//   margin-right: 0;
+// }
+
+// .nav-soc li a {
+//   font-size: 12px;
+//   line-height: 30px;
+//   letter-spacing: 5px;
+// }
+
+.nav-container .site-title {
+  font-size: 12px;
   line-height: 30px;
   letter-spacing: 5px;
   font-weight: 700;
@@ -59,7 +110,105 @@
   display: inline-block;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.nav-container .site-title:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
+  height: 2px;
+  width: calc(100% - 5px);
+  transition: 0.35s ease-out;
+  background-color: #000000;
+}
+
+.nav-container .site-title:hover:before {
+  width: 0;
+  background-color: #f44647;
+}
+
+.nav-btn {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 14px 10px;
+  transition: 0.15s ease;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.nav-btn.scroll-bottom {
+  top: -50px;
+}
+
+.nav-btn:hover .nav-btn-cover:before {
+  margin-left: 9px;
+}
+
+.nav-btn:hover .nav-btn-cover .menu-line {
+  margin-left: 17px;
+}
+
+.nav-btn.active .nav-btn-cover .menu-line {
+  opacity: 0;
+}
+
+.nav-btn.active .nav-btn-cover:before {
+  transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
+  margin-left: 0;
+  width: 26px;
+}
+
+.nav-btn.active .nav-btn-cover:after {
+  transform: rotate3d(0, 0, 1, -45deg);
+  width: 26px;
+}
+
+.nav-btn .nav-btn-cover {
+  position: relative;
+  height: 20px;
+  width: 30px;
+  display: block;
+}
+
+.nav-btn .nav-btn-cover .menu-line {
+  width: 13px;
+  height: 3px;
+  position: absolute;
+  transition: all 0.25s;
+  margin-left: 0;
+  top: 8px;
+  background-color: #000;
+}
+
+.nav-btn .nav-btn-cover:after,
+.nav-btn .nav-btn-cover:before {
+  content: "";
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  top: 8px;
+  background-color: #000;
+}
+
+.nav-btn .nav-btn-cover:before {
+  transform: translate3d(0, -8px, 0px);
+  width: 21px;
+  margin-left: 0;
+}
+
+.nav-btn .nav-btn-cover:after {
+  transform: translate3d(0, 8px, 0);
+}
+
+@media (min-width: 1200px) {
+  .nav-btn {
+    display: none;
+  }
 }
