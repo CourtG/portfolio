@@ -1,27 +1,21 @@
-/******* BASE STYLES START *******/
+/* ===================================
+    Global CSS
+====================================== */
 
-.wrapper {
-  max-width: 1000px;
-  width: 100%;
-  margin-left: 50px;
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.about,
-.skills,
-.portfolio,
-.contact {
-  margin-top: 65px;
-  padding-top: 85px;
-}
-
-.contact {
-  padding-bottom: 85px;
+*::selection {
+  background: #fff0f0;
 }
 
 body {
   color: #000000;
   line-height: 2;
-  font-size: 0.75rem;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   min-width: 320px;
@@ -31,11 +25,113 @@ body {
   background-position: center;
 }
 
-ul li {
-  text-decoration: none;
-  color: inherit;
-  list-style: none;
-  list-style-type: none;
+p {
+  margin-bottom: 40px;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.35s ease-out;
+}
+
+a:hover {
+  color: #f44647;
+}
+
+.section a {
+  font-weight: 700;
+  color: #f44647;
+}
+
+.section a:hover {
+  color: #000;
+}
+
+.block-right {
+  margin-right: -100px;
+}
+
+.block-right .block-right {
+  margin-right: 0;
+}
+
+img.block-right {
+  max-width: calc(100% + 100px);
+}
+
+.page-wrapper {
+  pointer-events: auto;
+  width: 100%;
+  background-color: #fff0f0;
+  max-width: 800px;
+}
+
+.section h2.title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-top: 65px;
+  padding-top: 85px;
+}
+
+.single .section {
+  min-height: 100vh;
+}
+
+.page-wrapper > section:first-of-type {
+  margin-top: 0;
+}
+
+.page-wrapper > section:last-of-type {
+  padding-bottom: 85px;
+}
+
+.section .section-des {
+  margin-bottom: 40px;
+}
+
+// .wrapper {
+//   max-width: 1000px;
+//   width: 100%;
+//   margin-left: 50px;
+// }
+
+// .about,
+// .skills,
+// .portfolio,
+// .contact {
+//   margin-top: 65px;
+//   padding-top: 85px;
+// }
+
+// .contact {
+//   padding-bottom: 85px;
+// }
+
+// body {
+//   color: #000000;
+//   line-height: 2;
+//   font-size: 0.75rem;
+//   font-family: "Poppins", sans-serif;
+//   font-weight: 400;
+//   min-width: 320px;
+//   position: relative;
+//   overflow-x: hidden;
+//   background: linear-gradient(to right, #fff0f0 0%, #fff0f0 60%, white 60%);
+//   background-position: center;
+// }
+
+// ul li {
+//   text-decoration: none;
+//   color: inherit;
+//   list-style: none;
+//   list-style-type: none;
+// }
 
 /******* BASE STYLES END *******/

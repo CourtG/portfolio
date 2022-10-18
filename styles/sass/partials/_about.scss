@@ -1,28 +1,47 @@
-.contactInfo {
-  background-color: $primary;
-  color: $lightText;
-  // width: 340px;
-  padding: 30px 30px 50px 70px;
+/* ===================================
+    About Section CSS
+====================================== */
+
+.about-img {
+  max-width: 100%;
+  display: block;
+}
+
+.about-info {
+  background-color: #f44647;
+  color: #fff;
+  width: 330px;
+  padding: 50px 30px 50px 70px;
   float: right;
   margin: 0 0 40px 65px;
 }
 
-.contactInfo h3 {
-  font-size: 16px;
+.about-info li + li {
+  margin-top: 44px;
+}
+
+.about-info h6 {
+  font-size: 12px;
   letter-spacing: 5px;
   font-weight: 400;
 }
 
-.contactInfo a:hover {
+.about-info a {
+  color: #fff;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.about-info a:hover {
   padding-left: 8px;
 }
 
-.about p {
-  max-width: 670px;
-  margin-bottom: 50px;
+.topText,
+.middleText {
+  padding-top: 53px;
 }
 
-.about img {
-  padding-bottom: 50px;
-  max-height: 80%;
+.topText p,
+.middleText p {
+  max-width: 670px;
 }

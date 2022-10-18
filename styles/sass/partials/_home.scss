@@ -1,50 +1,67 @@
-.home {
-  min-height: 100vh;
+/* ===================================
+    Home Section CSS
+====================================== */
+
+#home {
+  height: 100vh;
+  padding: 85px 0;
   margin: 0;
 }
 
-.homeContent {
+#home .container-wrap {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
   height: 100%;
 }
 
-.portrait {
-  max-height: calc(95vh - 185px);
-  width: auto;
+#home .main-photo {
+  max-height: calc(100vh - 170px);
+  width: 536px;
   object-fit: cover;
 }
 
-.resume {
-  background-color: #f44647;
-  display: flex;
-  align-items: center;
-  padding: 50px 70px;
-  margin-top: 0px;
-}
-
-.resume li + li {
-  margin-left: 100px;
-}
-
-.resume a {
-  color: #fff;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 30px;
-  letter-spacing: 5px;
-  position: relative;
-  display: inline-block;
-}
-
-.resume a:before {
-  content: "";
+#home .entry-title {
   position: absolute;
-  bottom: 5px;
-  right: 0;
-  height: 2px;
-  width: 100%;
-  transition: 0.35s ease-out;
-  background-color: #fff;
+  color: #f44647;
+  font-weight: 800;
+  font-size: 140px;
+  line-height: 143px;
+  letter-spacing: -4px;
+  z-index: 1;
+  left: 0;
+}
+
+#home .entry-title span {
+  text-decoration: underline;
+}
+
+#home .main-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+#home .main-btn img {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-name: scroll;
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(-25px);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
 }

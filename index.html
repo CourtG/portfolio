@@ -24,19 +24,21 @@
 
 </head>
 
-<body>
+<body class="one-page">
 
-    <header>
-        
-        <div class="navContainer">
-            <nav>
-<!--  -->
-                <div id="nav-btn" class="nav-btn">
-                    <span class="nav-btn-cover">
-                        <span class="menu-line"></span>                   
-                    </span>
-                </div>                                                           
-                    <div class="nav-container">
+    <div class="doc-loader"></div>
+
+    <div class="container">
+        <div class="page-wrapper">
+
+<!-- ================= HEADER ================= -->
+
+            <div id="nav-btn" class="nav-btn">
+                <span class="nav-btn-cover">
+                    <span class="menu-line"></span>                   
+                </span>
+                </div>                                                     
+                <div class="nav-container">
                         <a class="site-title slow-scroll" href="#home">COURTNEY GIBSON</a>
                         <nav class="nav-menu">
                             <ul class="nav-list">
@@ -54,38 +56,15 @@
                         <li><a href="https://www.instagram.com/court.gibbles/">IG.</a></li>
                     </ul>
                 </div>
-                <!-- =============== HEADER END =============== -->
-<!--  -->
-                <!-- <a class="navTitle" href="#home">COURTNEY GIBSON</a>
-                <ul class="navList" id="navList">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            
-                <ul class="navSocial">
-                    <li><a href="https://github.com/CourtG">GH.</a></li>
-                    <li><a href="https://www.linkedin.com/in/courtney-gibson/">IN.</a></li>
-                    <li><a href="https://www.instagram.com/court.gibbles/">IG.</a></li>
-                </ul> -->
-        </nav>
-        </div>
-        
-    </header>
-
-
 
 <!-- ================== HOME ================== -->
 
-    <section id="home" class="home">
-        <div class="wrapper">
-            <div class="homeContent">
-                <h1>Hello <br>I'm <span>Courtney Gibson</span></h1>
-                <img class="portrait" src="./assets/portrait.jpeg" width="400" alt="Portrait of Courtney">
-            </div>
-            <ul class="resume">
+    <section id="home" class="section">
+        <div class="container-wrap">
+                <h1 class="entry-title">Hello <br>I'm <span>Courtney Gibson</span></h1>
+                <img class="main-photo block-right" src="./assets/portrait.jpeg" width="400" alt="Portrait of Courtney">
+
+            <ul class="serv-link-cover block-right">
                 <li><a href="./assets/CourtneyGibsonResume.pdf">DOWNLOAD CV</a></li>
                 <li><a href="#portfolio">MY PORTFOLIO</a></li>
                 <li><a href="https://calendly.com/court-gibson">CALENDLY</a></li>
@@ -100,16 +79,15 @@
 
 <!-- ================== ABOUT ME ================== -->
 
-    <section id="about" class="about">
-        <div class="wrapper">
-            <h2>ABOUT ME</h2>
+    <section id="about" class="section">
+            <h2 class="title">ABOUT ME</h2>
             <div class="topText">
                 <p>I am an adaptable and creative Front-End Web Developer with a background in film production and fast-paced kitchens. I use my understanding of film and design to create an accessible experience that speaks to an inclusive audience. I am a resilient problem solver and team player with a healthy curiosity for learning new skills.</p>
             </div>
 
-            <img src="./assets/benchBW.jpeg" alt="banner image of a bench amongst tall grass">
+            <img class="about-img block-right" src="./assets/benchBW.jpeg" alt="banner image of a bench amongst tall grass">
             
-            <ul class="contactInfo">
+            <ul class="about-info">
                 <li>
                     <h3>EMAIL</h3>
                     <a href="mailto:courtney.giblets@gmail.com">courtney.giblets@gmail.com</a>
@@ -131,17 +109,17 @@
                 necessitatibus ipsam quisquam placeat earum fugiat, mollitia natus, iusto dolore nihil illo repellat adipisci dicta.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam, dolorum quia ipsum, corrupti excepturi
                 consequatur eum illo repudiandae inventore harum vitae nostrum, id suscipit ab velit tenetur sed dolorem.</p>
+            </div>
 
-            <img src="./assets/signature.svg" width="250" alt="Courtney Gibson's signature">
-        </div>
+            <img class="signature" src="./assets/signature.svg" width="250" alt="Courtney Gibson's signature">
+
     </section>
 
 
-    <!-- ================== SKILLS ================== -->
+<!-- ================== SKILLS ================== -->
 
-    <section id="skills" class="skills">
-        <div class="wrapper">
-            <h2>SKILLS</h2>
+    <section id="skills" class="section">
+            <h2 class="title">SKILLS</h2>
 
             <div class ="skillsWrap">
                 <ul class="iconItem">
@@ -219,17 +197,15 @@
                     <li><h4>Photoshop</h4></li>
                 </ul>
 
-
             </div>    
-        </div>
     </section>
 
 <!-- ================== PORTFOLIO ================== -->
 
 
-    <section id= "portfolio" class="portfolio">
-        <div class="wrapper">
-        <h2>PORTFOLIO</h2>
+    <section id= "portfolio" class="section">
+        <!-- <div class="wrapper"> -->
+        <h2 class="title">PORTFOLIO</h2>
 
         <div class="timeline">
             <ul>
@@ -310,60 +286,14 @@
                     </li>
 
                 </ul>
-                </div>
-
-
-        <!-- <div class="gallery-image">
-            
-            <div class="img-box">
-                <a href= "https://transcendent-faun-38e59b.netlify.app/"><img src="./assets/pro1.png" alt="screenshot of Recipe Finder App" /></a>
-                <div class="transparent-box">
-                    <div class="caption">
-                        <p>Recipe Finder</p>
-                        <p class="opacity-low">JavaScript + REST API</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="img-box">
-                <img src="https://picsum.photos/350/250/?image=431" alt="placeholder pic of latte art" />
-                <div class="transparent-box">
-                    <div class="caption">
-                        <p>An even BETTER app</p>
-                        <p class="opacity-low">Placeholder</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="img-box">
-                <img src="https://picsum.photos/350/250?image=474"
-                    alt="placeholder image of a highway fading into hills on an overcast day" />
-                <div class="transparent-box">
-                    <div class="caption">
-                        <p>App Extraordinaire</p>
-                        <p class="opacity-low">Placeholder</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="img-box">
-                <a href="https://transcendent-faun-38e59b.netlify.app/"><img src="./assets/pro1.png" alt="screenshot of Recipe Finder App " /></a>
-                <div class="transparent-box">
-                    <div class="caption">
-                        <p>Another Project</p>
-                        <p class="opacity-low">Placeholder</p>
-                    </div>
-                </div>
-            </div> -->
-
+                <!-- </div> -->
         </div>
     </section>
 
 <!-- ================== CONTACT ================== -->
 
-    <section id="contact" class="contact">
-        <div class="wrapper">
-            <h2>GET IN TOUCH</h2>
+    <section id="contact" class="section">
+            <h2 class="title">GET IN TOUCH</h2>
 
             <div class="contactForm">
                 <form action="https://formsubmit.co/courtney.giblets@gmail.com" method="POST">
@@ -384,12 +314,11 @@
                     </p>
                 </form>
             </div>
-        </div>
     </section>
 
 <!--=================== SCRIPT ===================-->
 
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 
-</body>
+    </body>
 </html>

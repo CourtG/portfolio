@@ -1,62 +1,7 @@
-.nav-container {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  max-width: 40%;
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-  padding: 250px 100px 85px 70px;
-}
+/* ===================================
+    2. Nav Menu CSS
+====================================== */
 
-// .nav-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-start;
-// }
-
-// .nav-list li a {
-//   display: inline-block;
-//   cursor: pointer;
-// }
-
-.nav-soc {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 70px;
-}
-
-.nav-soc li {
-  margin-right: 25px;
-}
-
-.nav-soc li a {
-  font-size: 0.75rem;
-  line-height: 30px;
-  letter-spacing: 5px;
-}
-
-// .site-title {
-//   font-size: 0.75rem;
-//   line-height: 30px;
-//   letter-spacing: 5px;
-//   font-weight: 700;
-//   margin-bottom: 51px;
-//   position: relative;
-//   display: inline-block;
-// }
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-//
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -77,28 +22,28 @@ a {
   width: 100% !important;
 }
 
-// .nav-soc {
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-//   position: absolute;
-//   left: 200px;
-//   bottom: 79px;
-// }
+.nav-soc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 200px;
+  bottom: 79px;
+}
 
-// .nav-soc li {
-//   margin-right: 25px;
-// }
+.nav-soc li {
+  margin-right: 25px;
+}
 
-// .nav-soc li:last-child {
-//   margin-right: 0;
-// }
+.nav-soc li:last-child {
+  margin-right: 0;
+}
 
-// .nav-soc li a {
-//   font-size: 12px;
-//   line-height: 30px;
-//   letter-spacing: 5px;
-// }
+.nav-soc li a {
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
 
 .nav-container .site-title {
   font-size: 12px;
