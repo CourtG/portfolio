@@ -732,25 +732,12 @@ a {
 }
 
 .about img {
+  padding-top: 25px;
   padding-bottom: 50px;
   max-height: 80%;
 }
 
-.gallery-image {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery-image img {
-  height: 250px;
-  width: 250px;
+.date img {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.4s ease;
@@ -759,65 +746,9 @@ a {
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-.img-box {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  height: 250px;
-  width: 350px;
-  overflow: hidden;
-  display: inline-block;
-  color: white;
-  position: relative;
-  background-color: white;
-}
-
-.caption {
-  position: absolute;
-  bottom: 5px;
-  left: 20px;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.transparent-box {
-  height: 250px;
-  width: 350px;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.img-box:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.img-box:hover .transparent-box {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.img-box:hover .caption {
+.date:hover img {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  opacity: 1;
-}
-
-.img-box:hover {
-  cursor: pointer;
-}
-
-.caption > p:nth-child(2) {
-  font-size: 0.8em;
-}
-
-.opacity-low {
-  opacity: 0.5;
 }
 
 .timeline {
@@ -839,17 +770,6 @@ a {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-}
-
-.point {
-  min-width: 20px;
-  height: 20px;
-  background-color: #f44647;
-  border-radius: 100%;
-  z-index: 2;
-  border: 2px #333333 solid;
-  position: relative;
-  left: 1px;
 }
 
 .timeline ul li .content {
@@ -880,7 +800,7 @@ a {
 
 .timeline ul li .date {
   width: 50%;
-  padding: 0 20px;
+  padding: 0 30px;
   font-weight: normal;
 }
 
@@ -921,7 +841,7 @@ a {
 }
 
 .timeline ul li .date img {
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .contactForm {
