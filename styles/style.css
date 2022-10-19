@@ -365,6 +365,29 @@ ul li {
   padding: 250px 100px 85px 70px;
 }
 
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nav-list li a {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .s-nav {
   position: fixed;
   right: 0;
@@ -400,6 +423,7 @@ ul li {
   font-size: 0.75rem;
   line-height: 30px;
   letter-spacing: 5px;
+  cursor: pointer;
 }
 
 a {
@@ -1042,6 +1066,9 @@ p.contact-submit-holder {
 
 /****************** MEDIA QUERIES ******************/
 @media (max-width: 1366px) {
+  .s-nav {
+    padding: 60px 100px 60px 200px;
+  }
   h1 {
     font-size: 4vw;
     line-height: 4vw;
@@ -1072,8 +1099,32 @@ p.contact-submit-holder {
     margin: 0 auto;
   }
   .s-nav {
-    left: 15px;
-    bottom: 15px;
+    right: auto;
+    left: -100%;
+    pointer-events: none;
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    z-index: 9;
+    padding: 80px 30px 60px;
+    overflow: auto;
+    height: 100%;
+    -webkit-transition: 0.25s ease-in;
+    transition: 0.25s ease-in;
+  }
+  .s-nav.active {
+    -webkit-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+    -webkit-box-shadow: 0 0 4px rgba(255, 240, 240, 0.5);
+            box-shadow: 0 0 4px rgba(255, 240, 240, 0.5);
+    left: 0;
+    pointer-events: auto;
+  }
+  .dropdown {
+    cursor: pointer;
+  }
+  .dropdown > a {
+    pointer-events: none;
   }
   .nav-container {
     padding-bottom: 60px;
@@ -1164,6 +1215,21 @@ p.contact-submit-holder {
   }
 }
 @media (max-width: 767px) {
+  .nav-btn {
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .s-nav {
+    z-index: 2;
+    padding: 40px 15px 60px;
+    margin-top: 46px;
+  }
+  .wrapper {
+    margin-top: 48px;
+  }
   .portrait {
     width: auto;
     max-height: 500px;
@@ -1200,6 +1266,9 @@ p.contact-submit-holder {
   p,
 h2 {
     margin-bottom: 20px;
+  }
+  .s-nav {
+    max-width: 100%;
   }
   .resume {
     -ms-flex-wrap: wrap;

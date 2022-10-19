@@ -10,18 +10,18 @@
   padding: 250px 100px 85px 70px;
 }
 
-// .nav-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-start;
-// }
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-// .nav-list li a {
-//   display: inline-block;
-//   cursor: pointer;
-// }
+.nav-list li a {
+  display: inline-block;
+  cursor: pointer;
+}
 .s-nav {
   position: fixed;
   right: 0;
@@ -33,14 +33,6 @@
   overflow: hidden;
   padding: 85px 100px 85px 200px;
 }
-
-// .nav-soc {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: flex-start;
-//   position: fixed;
-//   left: 70px;
-// }
 
 .nav-soc {
   display: flex;
@@ -59,6 +51,7 @@
   font-size: 0.75rem;
   line-height: 30px;
   letter-spacing: 5px;
+  cursor: pointer;
 }
 
 // .site-title {

@@ -1,6 +1,10 @@
 /****************** MEDIA QUERIES ******************/
 
 @media (max-width: 1366px) {
+  .s-nav {
+    padding: 60px 100px 60px 200px;
+  }
+
   h1 {
     font-size: 4vw;
     line-height: 4vw;
@@ -38,8 +42,32 @@
   }
 
   .s-nav {
-    left: 15px;
-    bottom: 15px;
+    right: auto;
+    left: -100%;
+    pointer-events: none;
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    z-index: 9;
+    padding: 80px 30px 60px;
+    overflow: auto;
+    height: 100%;
+    transition: 0.25s ease-in;
+  }
+
+  .s-nav.active {
+    transition: 0.25s ease-out;
+    box-shadow: 0 0 4px rgba(255, 240, 240, 0.5);
+    left: 0;
+    pointer-events: auto;
+  }
+
+  .dropdown {
+    cursor: pointer;
+  }
+
+  .dropdown > a {
+    pointer-events: none;
   }
 
   .nav-container {
@@ -135,6 +163,24 @@
 }
 
 @media (max-width: 767px) {
+  .nav-btn {
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .s-nav {
+    z-index: 2;
+    padding: 40px 15px 60px;
+    margin-top: 46px;
+  }
+
+  .wrapper {
+    margin-top: 48px;
+  }
+
   .portrait {
     width: auto;
     max-height: 500px;
@@ -178,6 +224,10 @@
   p,
   h2 {
     margin-bottom: 20px;
+  }
+
+  .s-nav {
+    max-width: 100%;
   }
 
   .resume {

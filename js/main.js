@@ -8,23 +8,6 @@
   setSlowScroll();
   setMenu();
 
-  function setSlowScroll() {
-    $('.nav-menu ul li a[href^="#"], a.button, .slow-scroll').on(
-      "click",
-      function (e) {
-        if ($(this).attr("href") === "#") {
-          e.preventDefault();
-        } else {
-          $("html, body").animate(
-            { scrollTop: $(this.hash).offset().top },
-            1500
-          );
-          return false;
-        }
-      }
-    );
-  }
-
   function stopAnimateOnScroll() {
     $("html, body").on(
       "scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove",
@@ -105,22 +88,5 @@
         $(".s-nav, .nav-btn").toggleClass("active");
       }
     });
-  }
-
-  function setSlowScroll() {
-    $('.nav-menu ul li a[href^="#"], a.button, .slow-scroll').on(
-      "click",
-      function (e) {
-        if ($(this).attr("href") === "#") {
-          e.preventDefault();
-        } else {
-          $("html, body").animate(
-            { scrollTop: $(this.hash).offset().top },
-            1500
-          );
-          return false;
-        }
-      }
-    );
   }
 })(jQuery);
