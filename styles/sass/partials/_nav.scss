@@ -22,6 +22,25 @@
 //   display: inline-block;
 //   cursor: pointer;
 // }
+.s-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 40%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  padding: 85px 100px 85px 200px;
+}
+
+// .nav-soc {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: flex-start;
+//   position: fixed;
+//   left: 70px;
+// }
 
 .nav-soc {
   display: flex;
@@ -29,6 +48,7 @@
   justify-content: flex-start;
   position: absolute;
   left: 70px;
+  bottom: 79px;
 }
 
 .nav-soc li {
@@ -77,28 +97,19 @@ a {
   width: 100% !important;
 }
 
-// .nav-soc {
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-//   position: absolute;
-//   left: 200px;
-//   bottom: 79px;
-// }
+.nav-soc li {
+  margin-right: 25px;
+}
 
-// .nav-soc li {
-//   margin-right: 25px;
-// }
+.nav-soc li:last-child {
+  margin-right: 0;
+}
 
-// .nav-soc li:last-child {
-//   margin-right: 0;
-// }
-
-// .nav-soc li a {
-//   font-size: 12px;
-//   line-height: 30px;
-//   letter-spacing: 5px;
-// }
+.nav-soc li a {
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
 
 .nav-container .site-title {
   font-size: 12px;
