@@ -1,6 +1,17 @@
-.home {
+/******* HOME SECTION - STYLES START *******/
+
+#home {
   min-height: 100vh;
+  padding: 0;
   margin: 0;
+}
+
+#home .container-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
 }
 
 .homeContent {
@@ -48,3 +59,5 @@
   transition: 0.35s ease-out;
   background-color: #fff;
 }
+
+/******* HOME SECTION - STYLES END *******/

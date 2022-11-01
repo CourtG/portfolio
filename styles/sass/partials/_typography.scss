@@ -1,3 +1,5 @@
+/******* TYPOGRAPHY - STYLES START *******/
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap");
 
 html {
@@ -16,7 +18,13 @@ p {
   margin: 0;
 }
 
-.home h1 {
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.35s ease-out;
+}
+
+#home .entry-title {
   position: absolute;
   color: $primary;
   font-weight: 800;
@@ -25,15 +33,14 @@ p {
   letter-spacing: -4px;
   z-index: 1;
   left: 0;
-  padding-top: 125px;
-  padding-left: 50px;
+  padding-top: 75px;
 }
 
-.home span {
+#home span {
   text-decoration: underline;
 }
 
-h2 {
+.section h2 {
   font-weight: 500;
   font-size: 26px;
   line-height: 150%;
@@ -43,4 +50,9 @@ h2 {
 
 h3 {
   color: $lightText;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
+
+/******* TYPOGRAPHY - STYLES END *******/

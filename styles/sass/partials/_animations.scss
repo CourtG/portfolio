@@ -1,4 +1,4 @@
-// ARROW ICON ANIMATION CSS //
+/******* BOUNCING ARROW - STYLES START *******/
 
 .arrow {
   text-align: left;
@@ -8,8 +8,8 @@
 }
 
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
+  // -moz-animation: bounce 2s infinite;
+  // -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
@@ -28,3 +28,5 @@
     transform: translateY(-15px);
   }
 }
+
+/******* BOUNCING ARROW - STYLES END *******/

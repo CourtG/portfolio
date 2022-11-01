@@ -1,8 +1,26 @@
-/****************** MEDIA QUERIES ******************/
+/****************** MEDIA QUERIES - START ******************/
 
 @media (max-width: 1366px) {
   .s-nav {
-    padding: 60px 100px 60px 200px;
+    padding: 0px 100px 60px 200px;
+    top: 0px;
+  }
+
+  .nav-soc {
+    position: static;
+  }
+
+  .nav-container .site-title {
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+
+  .dropdown {
+    cursor: pointer;
+  }
+
+  .dropdown > a {
+    pointer-events: none;
   }
 
   h1 {
@@ -10,7 +28,7 @@
     line-height: 4vw;
   }
 
-  .home {
+  #home {
     padding-bottom: 60px;
   }
 
@@ -19,7 +37,7 @@
     max-height: calc(100vh - 120px);
   }
 
-  .home h1 {
+  .entry-title {
     font-size: 120px;
     line-height: 123px;
   }
@@ -30,7 +48,7 @@
     width: 440px;
   }
 
-  .home h1 {
+  .entry-title {
     font-size: 110px;
     line-height: 113px;
   }
@@ -124,12 +142,12 @@
     display: block;
   }
 
-  .home {
+  #home {
     display: flex;
     align-items: center;
   }
 
-  .home h1 {
+  .entry-title {
     font-size: 110px;
     line-height: 113px;
   }
@@ -149,10 +167,10 @@
     width: 100%;
   }
 
-  .about,
-  .skills,
-  .portfolio,
-  .contact {
+  #about,
+  #skills,
+  #portfolio,
+  #contact {
     margin-top: 0px;
     padding-top: 0px;
   }
@@ -187,14 +205,14 @@
     max-width: 65%;
   }
 
-  .home h1 {
+  .entry-title {
     font-size: 70px;
     line-height: 73px;
     max-width: 340px;
     letter-spacing: -2px;
   }
 
-  .home {
+  #home {
     padding: 55px 0 0;
     height: auto;
   }
@@ -215,7 +233,7 @@
     max-width: 85%;
   }
 
-  .home h1 {
+  .entry-title {
     font-size: 56px;
     line-height: 62px;
     padding: 50px 0;
@@ -272,3 +290,5 @@
     padding-top: 0;
   }
 }
+
+/****************** MEDIA QUERIES - END ******************/

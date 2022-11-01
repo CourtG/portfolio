@@ -1,31 +1,9 @@
-.nav-container {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  max-width: 40%;
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-  padding: 250px 100px 85px 70px;
-}
+/******* NAVIGATION - STYLES START *******/
 
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.nav-list li a {
-  display: inline-block;
-  cursor: pointer;
-}
 .s-nav {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 125px;
   height: 100vh;
   max-width: 40%;
   width: 100%;
@@ -34,50 +12,46 @@
   padding: 85px 100px 85px 200px;
 }
 
-.nav-soc {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 70px;
-  bottom: 79px;
-}
-
-.nav-soc li {
-  margin-right: 25px;
-}
-
-.nav-soc li a {
-  font-size: 0.75rem;
-  line-height: 30px;
-  letter-spacing: 5px;
-  cursor: pointer;
-}
-
-// .site-title {
-//   font-size: 0.75rem;
-//   line-height: 30px;
-//   letter-spacing: 5px;
-//   font-weight: 700;
-//   margin-bottom: 51px;
+// .nav-count {
 //   position: relative;
-//   display: inline-block;
+//   line-height: 22px;
+//   font-weight: 700;
+//   margin-bottom: 154px;
 // }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+// .nav-count > div {
+//   position: relative;
+//   display: inline-block;
+//   vertical-align: top;
+// }
 
-//
+// .nav-count .current-num {
+//   width: 18px;
+// }
+
+// .nav-count .current-num span {
+//   left: 0;
+//   top: 0;
+//   position: absolute;
+//   color: #f44647;
+//   animation-duration: 0ms;
+// }
+
+// .nav-count .pagination-sep {
+//   padding: 0 12px;
+// }
+
 .nav-list {
   display: flex;
+  // flex-wrap: wrap;
   flex-direction: column;
+  // justify-content: space-between;
   align-items: flex-start;
 }
 
 .nav-list li a {
   display: inline-block;
+  cursor: pointer;
 }
 
 .nav-list li.current a {
@@ -90,18 +64,28 @@ a {
   width: 100% !important;
 }
 
-.nav-soc li {
-  margin-right: 25px;
+.nav-soc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 175px;
+  bottom: 300px;
 }
 
-.nav-soc li:last-child {
-  margin-right: 0;
+.nav-soc li {
+  margin-right: 25px;
 }
 
 .nav-soc li a {
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.nav-soc li:last-child {
+  margin-right: 0;
 }
 
 .nav-container .site-title {
@@ -109,7 +93,7 @@ a {
   line-height: 30px;
   letter-spacing: 5px;
   font-weight: 700;
-  margin-bottom: 51px;
+  margin-bottom: 100px;
   position: relative;
   display: inline-block;
 }
@@ -216,3 +200,5 @@ a {
     display: none;
   }
 }
+
+/******* NAVIGATION - STYLES END *******/

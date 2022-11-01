@@ -227,6 +227,9 @@ html {
   overflow: hidden;
 }
 
+/******* VARIABLES START *******/
+/******* VARIABLES END *******/
+/******* TYPOGRAPHY - STYLES START *******/
 html {
   font-size: 125%;
 }
@@ -243,7 +246,14 @@ p {
   margin: 0;
 }
 
-.home h1 {
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.35s ease-out;
+  transition: 0.35s ease-out;
+}
+
+#home .entry-title {
   position: absolute;
   color: #f44647;
   font-weight: 800;
@@ -252,15 +262,14 @@ p {
   letter-spacing: -4px;
   z-index: 1;
   left: 0;
-  padding-top: 125px;
-  padding-left: 50px;
+  padding-top: 75px;
 }
 
-.home span {
+#home span {
   text-decoration: underline;
 }
 
-h2 {
+.section h2 {
   font-weight: 500;
   font-size: 26px;
   line-height: 150%;
@@ -270,31 +279,68 @@ h2 {
 
 h3 {
   color: #fff;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
 
+/******* TYPOGRAPHY - STYLES END *******/
 /******* BASE STYLES START *******/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::-moz-selection {
+  background: #fff0f0;
+}
+
+*::selection {
+  background: #fff0f0;
+}
+
 .wrapper {
   max-width: 800px;
   width: 100%;
   margin-left: 50px;
 }
 
-.about,
-.skills,
-.portfolio,
-.contact {
+.content-670 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}
+
+.doc-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+.section {
   margin-top: 65px;
   padding-top: 85px;
 }
 
-.contact {
+#contact {
   padding-bottom: 85px;
 }
 
 body {
   color: #000000;
   line-height: 2;
-  font-size: 0.75rem;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   min-width: 320px;
@@ -312,7 +358,16 @@ ul li {
   list-style-type: none;
 }
 
+a:hover {
+  color: #f44647;
+}
+
+.section a:hover {
+  color: #000;
+}
+
 /******* BASE STYLES END *******/
+/******* BOUNCING ARROW - STYLES START *******/
 .arrow {
   text-align: left;
   padding-left: 50px;
@@ -321,7 +376,7 @@ ul li {
 
 .bounce {
   -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -353,31 +408,28 @@ ul li {
             transform: translateY(-15px);
   }
 }
-.nav-container {
+/******* BOUNCING ARROW - STYLES END *******/
+/******* NAVIGATION - STYLES START *******/
+.s-nav {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 125px;
   height: 100vh;
   max-width: 40%;
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  padding: 250px 100px 85px 70px;
+  padding: 85px 100px 85px 200px;
 }
 
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -388,16 +440,14 @@ ul li {
   cursor: pointer;
 }
 
-.s-nav {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  max-width: 40%;
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-  padding: 85px 100px 85px 200px;
+.nav-list li.current a {
+  color: #f44647;
+}
+
+.nav-list li ul {
+  padding-left: 28px;
+  display: none;
+  width: 100% !important;
 }
 
 .nav-soc {
@@ -411,65 +461,23 @@ ul li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: absolute;
-  left: 70px;
-  bottom: 79px;
+  left: 175px;
+  bottom: 300px;
 }
 
 .nav-soc li {
   margin-right: 25px;
-}
-
-.nav-soc li a {
-  font-size: 0.75rem;
-  line-height: 30px;
-  letter-spacing: 5px;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.nav-list li a {
-  display: inline-block;
-}
-
-.nav-list li.current a {
-  color: #f44647;
-}
-
-.nav-list li ul {
-  padding-left: 28px;
-  display: none;
-  width: 100% !important;
-}
-
-.nav-soc li {
-  margin-right: 25px;
-}
-
-.nav-soc li:last-child {
-  margin-right: 0;
 }
 
 .nav-soc li a {
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.nav-soc li:last-child {
+  margin-right: 0;
 }
 
 .nav-container .site-title {
@@ -477,7 +485,7 @@ a {
   line-height: 30px;
   letter-spacing: 5px;
   font-weight: 700;
-  margin-bottom: 51px;
+  margin-bottom: 100px;
   position: relative;
   display: inline-block;
 }
@@ -591,9 +599,26 @@ a {
     display: none;
   }
 }
-.home {
+/******* NAVIGATION - STYLES END *******/
+/******* HOME SECTION - STYLES START *******/
+#home {
   min-height: 100vh;
+  padding: 0;
   margin: 0;
+}
+
+#home .container-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  height: 100%;
 }
 
 .homeContent {
@@ -654,6 +679,8 @@ a {
   background-color: #fff;
 }
 
+/******* HOME SECTION - STYLES END *******/
+/******* SKILLS SECTION - STYLES START *******/
 .skillsWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,6 +721,8 @@ a {
           transform: translateX(-5px);
 }
 
+/******* SKILLS SECTION - STYLES START *******/
+/******* ABOUT SECTION - STYLES START *******/
 .container-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,17 +755,19 @@ a {
   padding-left: 8px;
 }
 
-.about p {
+#about p {
   max-width: 670px;
   margin-bottom: 25px;
 }
 
-.about img {
+#about img {
   padding-top: 25px;
   padding-bottom: 50px;
   max-height: 80%;
 }
 
+/******* ABOUT SECTION - STYLES END *******/
+/******* PORTFOLIO SECTION - STYLES START *******/
 .date img {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -844,6 +875,8 @@ a {
   max-width: 400px;
 }
 
+/******* PORTFOLIO SECTION - STYLES END *******/
+/******* CONTACT SECTION - STYLES START *******/
 .contactForm {
   margin: 40px 100px 40px 50px;
 }
@@ -984,23 +1017,38 @@ p.contact-submit-holder {
   opacity: 1;
 }
 
-/****************** MEDIA QUERIES ******************/
+/******* CONTACT SECTION - STYLES END *******/
+/****************** MEDIA QUERIES - START ******************/
 @media (max-width: 1366px) {
   .s-nav {
-    padding: 60px 100px 60px 200px;
+    padding: 0px 100px 60px 200px;
+    top: 0px;
+  }
+  .nav-soc {
+    position: static;
+  }
+  .nav-container .site-title {
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  .dropdown {
+    cursor: pointer;
+  }
+  .dropdown > a {
+    pointer-events: none;
   }
   h1 {
     font-size: 4vw;
     line-height: 4vw;
   }
-  .home {
+  #home {
     padding-bottom: 60px;
   }
   .portrait {
     width: 470px;
     max-height: calc(100vh - 120px);
   }
-  .home h1 {
+  .entry-title {
     font-size: 120px;
     line-height: 123px;
   }
@@ -1009,7 +1057,7 @@ p.contact-submit-holder {
   .portrait {
     width: 440px;
   }
-  .home h1 {
+  .entry-title {
     font-size: 110px;
     line-height: 113px;
   }
@@ -1090,7 +1138,7 @@ p.contact-submit-holder {
   .nav-list.show {
     display: block;
   }
-  .home {
+  #home {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1098,7 +1146,7 @@ p.contact-submit-holder {
         -ms-flex-align: center;
             align-items: center;
   }
-  .home h1 {
+  .entry-title {
     font-size: 110px;
     line-height: 113px;
   }
@@ -1123,10 +1171,10 @@ p.contact-submit-holder {
   .homeContent {
     width: 100%;
   }
-  .about,
-.skills,
-.portfolio,
-.contact {
+  #about,
+#skills,
+#portfolio,
+#contact {
     margin-top: 0px;
     padding-top: 0px;
   }
@@ -1155,13 +1203,13 @@ p.contact-submit-holder {
     max-height: 500px;
     max-width: 65%;
   }
-  .home h1 {
+  .entry-title {
     font-size: 70px;
     line-height: 73px;
     max-width: 340px;
     letter-spacing: -2px;
   }
-  .home {
+  #home {
     padding: 55px 0 0;
     height: auto;
   }
@@ -1178,7 +1226,7 @@ p.contact-submit-holder {
   .portrait {
     max-width: 85%;
   }
-  .home h1 {
+  .entry-title {
     font-size: 56px;
     line-height: 62px;
     padding: 50px 0;
@@ -1225,3 +1273,4 @@ h2 {
     padding-top: 0;
   }
 }
+/****************** MEDIA QUERIES - END ******************/
