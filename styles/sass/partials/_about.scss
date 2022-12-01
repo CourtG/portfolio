@@ -10,11 +10,15 @@
 
 .contactInfo {
   background-color: $primary;
-  color: $lightText;
   // width: 340px;
   padding: 30px 30px 50px 70px;
   float: right;
   margin: 0 0 40px 65px;
+}
+
+.contactInfo a,
+.contactInfo li p {
+  color: $lightText;
 }
 
 .contactInfo h3 {
@@ -23,8 +27,9 @@
   font-weight: 400;
 }
 
-.contactInfo a:hover {
-  padding-left: 8px;
+.contactInfo li a:hover {
+  color: #000;
+  font-style: italic;
 }
 
 #about p {
